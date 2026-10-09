@@ -24,7 +24,7 @@ void Solver::PrintNode(const Node& node, const std::vector<Symbol>& input, const
     for (int i = node.inputCounter; i < input.size(); ++i) {
         std::cout << input[i].GetName();
     }
-    std::cout << endl;
+    std::cout << std::endl;
     std::cout << "Stack: [";
 
     std::stack<Symbol> stackCopy = node.stack;
@@ -39,7 +39,7 @@ void Solver::PrintNode(const Node& node, const std::vector<Symbol>& input, const
     std::cout << "]" << std::endl;
     std::cout << "Transiciones posibles: ";
     if (node.stack.empty()) {
-        std::cout << endl;
+        std::cout << std::endl;
         return;
     }
     std::cout << endl;
