@@ -25,17 +25,18 @@ El ejemplo incluido reconoce un lenguaje del tipo palíndromo con longitud par, 
 ## Estructura del proyecto
 
 - `main.cpp`: punto de entrada del programa.
-- `reader.h` / `reader.cpp`: lectura del autómata y del archivo de entrada.
-- `automaton.h` / `automaton.cpp`: definición del autómata.
-- `solver.h` / `solver.cpp`: lógica de resolución del problema.
-- `state.h` / `state.cpp`: representación de estados.
-- `symbol.h` / `symbol.cpp`: representación de símbolos.
-- `transition.h` / `transition.cpp`: definición de transiciones.
-- `node.h` / `node.cpp`: nodos del recorrido BFS.
-- `tools.h` / `tools.cpp`: utilidades auxiliares.
+- `include/`: encabezados (`.h`) del proyecto.
+- `reader.cpp`: lectura del autómata y del archivo de entrada.
+- `automaton.cpp`: definición del autómata.
+- `solver.cpp`: lógica de resolución del problema.
+- `state.cpp`: representación de estados.
+- `symbol.cpp`: representación de símbolos.
+- `transition.cpp`: definición de transiciones.
+- `node.cpp`: nodos del recorrido BFS.
+- `tools.cpp`: utilidades auxiliares.
 - `automata.txt`: ejemplo de autómata.
 - `input.txt`: ejemplo de cadenas de entrada.
-- `Makefile`: compilación del proyecto.
+- `Makefile`: compilación del proyecto; guarda los archivos objeto en `build/`.
 
 ## Formato del archivo del autómata
 
